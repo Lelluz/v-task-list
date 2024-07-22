@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  @apply bg-dandelion-500;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-dandelion-500;
+}
+
 .textarea-auto-grow {
   @apply rounded w-full overflow-hidden resize-none;
 }

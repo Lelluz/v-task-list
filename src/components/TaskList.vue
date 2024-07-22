@@ -12,10 +12,10 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <div class="rounded shadow-md mt-16">
+  <div class="rounded shadow-md mt-16 overflow-y-auto h-[520px]">
     <ul class="grid gap-5">
       <TaskItem
-        v-for="task in tasks"
+        v-for="task in tasks.slice().reverse()"
         :key="task.id"
         :task="task"
         @delete-task="$emit('delete-task', $event)"
