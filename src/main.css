@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.textarea-auto-grow {
+  @apply rounded w-full overflow-hidden resize-none;
+}
