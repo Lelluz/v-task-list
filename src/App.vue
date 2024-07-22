@@ -8,6 +8,9 @@
   <div class="container">
     <h1>Welcome to Tauri + Vue + Pinia + Vite + Tailwind</h1>
   </div>
+  <div class="bg-dandelion-500 text-white p-4">
+    Questo è un div con background dandelion-500
+  </div>
 </template>
 
 <style scoped>
