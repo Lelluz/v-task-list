@@ -5,7 +5,7 @@ import TaskItem from '../components/TaskItem.vue';
 
 describe('TaskList.vue', () => {
   it('renders tasks in reverse order', () => {
-    const tasks = [
+    const tasks: Task[] = [
       { id: 1, text: 'Task 1' },
       { id: 2, text: 'Task 2' },
       { id: 3, text: 'Task 3' }
@@ -22,7 +22,7 @@ describe('TaskList.vue', () => {
   });
 
   it('emits delete-task event with task id when a task is deleted', async () => {
-    const tasks = [
+    const tasks: Task[] = [
       { id: 1, text: 'Task 1' },
       { id: 2, text: 'Task 2' },
       { id: 3, text: 'Task 3' }

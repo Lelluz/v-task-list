@@ -5,7 +5,7 @@ import { PencilSquareIcon, XCircleIcon } from '@heroicons/vue/20/solid';
 
 describe('TaskItem.vue', () => {
   it('renders task text', () => {
-    const task = { id: 1, text: 'Test Task' };
+    const task: Task = { id: 1, text: 'Test Task' };
     const wrapper = mount(TaskItem, {
       props: { task },
     });
@@ -14,7 +14,7 @@ describe('TaskItem.vue', () => {
   });
 
   it('emits delete-task event with task id when delete button is clicked', async () => {
-    const task = { id: 1, text: 'Test Task' };
+    const task: Task = { id: 1, text: 'Test Task' };
     const wrapper = mount(TaskItem, {
       props: { task },
     });
@@ -27,7 +27,7 @@ describe('TaskItem.vue', () => {
   });
 
   it('renders PencilSquareIcon and XCircleIcon', () => {
-    const task = { id: 1, text: 'Test Task' };
+    const task: Task = { id: 1, text: 'Test Task' };
     const wrapper = mount(TaskItem, {
       props: { task },
     });

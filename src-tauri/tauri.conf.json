@@ -19,7 +19,7 @@
     },
     "windows": [
       {
-        "title": "v-task-list",
+        "title": "Vue Task List App",
         "width": 500,
         "height": 800,
         "resizable": false,
